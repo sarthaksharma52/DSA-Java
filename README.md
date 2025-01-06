@@ -36,9 +36,6 @@ The problems are categorized into directories based on topics for easier navigat
 ├── 📁 Sorting
 └── 📁 Miscellaneous
 
-yaml
-Copy code
-
 ---
 
 ## 🚀 How to Use  
