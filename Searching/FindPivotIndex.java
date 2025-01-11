@@ -11,6 +11,7 @@ class Solution {
             if (leftSum == rightSum) {
                 return i;
             }
+            
             leftSum += nums[i];
         }
 
