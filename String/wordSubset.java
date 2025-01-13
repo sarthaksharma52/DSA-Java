@@ -19,6 +19,7 @@ class Solution {
                     isUniversal = false;
                     break;
                 }
+                
             }
             if (isUniversal) {
                 result.add(a);
