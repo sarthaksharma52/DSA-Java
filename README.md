@@ -12,7 +12,7 @@ This repository is my personal space where I solve and commit solutions to vario
   - Arrays
   - Linked Lists
   - Stacks & Queues
-  - Trees & Graphs
+  - Trees & Graphs 
   - Strings
   - Dynamic Programming
   - Recursion & Backtracking

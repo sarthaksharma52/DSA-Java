@@ -4,6 +4,7 @@ class Solution {
         
         int i = num.length - 1;
         
+        
         while (i >= 0 || k > 0) {
             if (i >= 0) {
                 k += num[i];
