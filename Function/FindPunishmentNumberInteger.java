@@ -4,7 +4,7 @@ class Solution {
         for (int i = 1; i <= n; i++) {
             if (punishment(i, i * i, 0)) {
                 sum += i * i;
-            }
+            } 
         }
         return sum;
     }
