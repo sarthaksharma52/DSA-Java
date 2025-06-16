@@ -11,7 +11,7 @@ public class Main{
     
     int[] res = new int[n];
     for(int i=0;i<n;i++){
-      res[i] = count(i,0,arr);
+      res[i] = count(i,0,arr); 
     }
     
     Arrays.sort(res);
