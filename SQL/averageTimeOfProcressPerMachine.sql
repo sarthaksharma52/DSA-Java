@@ -4,7 +4,7 @@ SELECT
     ROUND(AVG(end_time - start_time), 3) AS processing_time
 FROM
     (SELECT
-        machine_id,
+        machine_id, 
         process_id,
         MAX(CASE WHEN activity_type = 'start' THEN timestamp ELSE NULL END) AS start_time,
         MAX(CASE WHEN activity_type = 'end' THEN timestamp ELSE NULL END) AS end_time
