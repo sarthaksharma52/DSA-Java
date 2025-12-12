@@ -14,3 +14,65 @@ class Solution {
             && isMirror(t1.right, t2.left);
     }
 }
+
+
+// brute force solution
+
+
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
+class Solution {
+    public boolean isSymmetric(TreeNode root) {
+        List<Integer> ls1 = new ArrayList<>();
+        List<Integer> ls2 = new ArrayList<>();
+
+        find(root.left,ls1);
+        find1(root.right,ls2);
+
+        for(int i=0;i<ls1.size();i++){
+            System.out.println(ls1.get(i));
+        }
+        for(int i=0;i<ls2.size();i++){
+            System.out.println(ls2.get(i));
+        }
+
+        return ls1.equals(ls2);
+    }
+
+    private void find(TreeNode root,List<Integer> ls){
+        if(root == null){
+            ls.add(null);
+            return;
+        }
+
+        ls.add(root.val);
+        find(root.left,ls);
+        find(root.right,ls);
+
+    }
+
+    private void find1(TreeNode root,List<Integer> ls){
+        if(root == null){
+            ls.add(null);
+            return;
+        }
+
+        ls.add(root.val);
+        find1(root.right,ls);
+        find1(root.left,ls);
+
+    }
+}
