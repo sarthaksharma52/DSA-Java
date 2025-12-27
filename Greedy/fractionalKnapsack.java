@@ -31,3 +31,13 @@ class Solution {
         return Math.round(totalValue * 1e6) / 1e6;
     }
 }
+
+
+
+
+
+
+
+
+        double totalValue = 0.0;
+
