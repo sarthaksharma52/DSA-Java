@@ -27,12 +27,34 @@ public class InertionInBinarySearchTree{
         return root;
     }
 
+
+    // searching in binary tree 
+
+    public static boolean search(node root , int val){
+
+        if(root == null){
+            return false;
+        }
+
+        if(root.val == val){
+            return true;
+        }
+
+        if(root.val>val){
+            return search(root.left,val);
+        }
+        else{
+            return search(root.right, val);
+        }
+
+    }
+
     public static void inorder(node root){
         if(root == null ){
             return;
         }
         inorder(root.left);
-        System.out.println(root.val + " ");
+        System.out.print(root.val + " ");
         inorder(root.right);
 
     }
@@ -45,6 +67,15 @@ public class InertionInBinarySearchTree{
 
         inorder(root);
         System.out.println();
+
+        boolean found = search(root,5);
+
+        if(found){
+            System.out.println("Value is found");
+        }
+        else{
+            System.out.println("value is not found");
+        }
 
     }
 }
